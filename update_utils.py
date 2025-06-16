@@ -8,8 +8,8 @@ import time
 from tkinter import messagebox
 
 # Configuration
-GITHUB_REPO_API = "https://api.github.com/repos/pahilabs/simple-test-app/releases/latest"
-GITHUB_RELEASES_URL = "https://github.com/pahilabs/simple-test-app/releases"
+GITHUB_REPO_API = "https://api.github.com/repos/Winner2003-key/simple-test-app/releases/latest"
+GITHUB_RELEASES_URL = "https://github.com/Winner2003-key/simple-test-app/releases"
 CURRENT_VERSION = "1.0.0"  # This should match main.py
 
 # Backup paths
