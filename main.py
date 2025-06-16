@@ -15,7 +15,7 @@ import traceback
 from pathlib import Path
 
 # Version information
-APP_VERSION = "1.0.0"
+APP_VERSION = "1.0.1"
 APP_NAME = "SimpleTestApp"
 
 class Database:
@@ -149,6 +149,7 @@ class SimpleTestApp:
     def __init__(self, root):
         self.root = root
         self.root.title(f"{APP_NAME} v{APP_VERSION}")
+        
         self.root.geometry("600x500")
         self.root.resizable(True, True)
         
@@ -165,6 +166,11 @@ class SimpleTestApp:
         """Create the main GUI widgets"""
         # Main frame
         main_frame = ttk.Frame(self.root, padding="10")
+        # Add version info display
+        version_info = ttk.Label(main_frame, text=f"🎉 Updated to version {APP_VERSION}!", 
+                                font=('Arial', 10), foreground='green')
+        version_info.grid(row=0, column=1, pady=(0, 20))
+        
         main_frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
         
         # Title
