@@ -5,7 +5,7 @@ set +e  # Don't exit on error
 
 # Configuration
 APP_NAME="SimpleTestApp"
-APP_VERSION="1.0.0"
+APP_VERSION="1.0.1"
 APP_DESCRIPTION="Simple Test Application with Update Mechanism"
 MAINTAINER="Test Developer <test@example.com>"
 ARCHITECTURE="amd64"
